@@ -8,7 +8,7 @@ var windSpeedEl = document.getElementById("windSpeed");
 
 searchButton.addEventListener("click", function() {
     var cityName = weatherInput.value;
-    fetch("https://api.openweathermap.org/data/2.5/weather?q="+cityName+"&appid=784e96f1b18fe22b3847fa6ed87bd2bc");
+    fetch("https://api.openweathermap.org/data/2.5/weather?q="+cityName+"&appid=784e96f1b18fe22b3847fa6ed87bd2bc")
     .then(function(response){
         return response.json();
     }).then(function(weather){
